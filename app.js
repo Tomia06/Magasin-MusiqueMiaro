@@ -10,8 +10,12 @@ fetch("musique.json")
 // retour: rien 
 function afficher(tableau) {
     tableau.produits.forEach(articles => {
-            document.getElementById("divProduit").innerHTML += `<img src=${articles.image} alt="" class="w100">
-                <h2>${articles.nom}</h2>
-                <p>${articles.description}</p>`
+            document.getElementById("secProduit").innerHTML += `
+            <div class="card w50">
+            <img src= ${articles.image} alt="" class="w100">
+            <h2>${articles.nom}</h2>
+            <p>${articles.description}</p>
+            </div>
+            `
         });
 }                                                   
