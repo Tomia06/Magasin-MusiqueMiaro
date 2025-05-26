@@ -23,30 +23,35 @@ function afficherProduit(tableau) {
             `
     });
 }
-
+//
+//
+//
 function afficherService(tableau) {
     tableau.services.forEach(service => {
         document.getElementById("secServices").innerHTML += `
             <!-- Div principale -->
-            <div class= "card flex justify-center gap5 w50">
+            <div class= "flex justify-center gap16 w100 swiper-slide">
                 <!-- Div pour l'image -->
-                <div class="w50">
+                <div class="w30">
                     <img src="${service.imageSevices}" alt="" class="w100">
                 </div>
                 <!-- Div pour les écritures -->
                 <div class="w25">
                     <h2>${service.nom}</h2>
                     <p>${service.description}</p>
-                    <a href="">Click ici</a>
-                </div>
-
+                    <a href="" class="bouton">Click ici</a> 
+                </div>  
                 
-                
-                
-                `
+            </div>
+             `
     });
+
+  
 };
 
+//
+//
+//
 function afficherTemoignage(tableau) {
     tableau.temoignages.forEach(temoignage => {
         const etoilesPleines = '★'.repeat(temoignage.note);
@@ -63,13 +68,18 @@ function afficherTemoignage(tableau) {
         <div>
             <p>${etoiles}</p>
         </div>
+        </div>
             `
     })
 }
 
+//
+//
+//
 function afficherPromesse(tableau) {
     tableau.promesses.forEach(promesse => {
-        document.getElementById("secPromesses").innerHTML += `     
+        document.getElementById("secPromesses").innerHTML += `
+        <div class="carte">     
         <div>
             <img src="" alt="">
         </div>
@@ -77,28 +87,30 @@ function afficherPromesse(tableau) {
         <div>
             <p>${promesse}</p>
         </div>
+        </div>
         `
     });
 }
 
-  const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+setTimeout(()=>{
+    const swiper = new Swiper('.swiper', {
+ 
+    direction: "horizontal",
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+   
 });
+},500)
+  

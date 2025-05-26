@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicHalle - Instruments du Monde</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="app.js" defer></script>
 </head>
-
 <body>
     <header>
         <div class="flex">
@@ -29,70 +28,22 @@
     </header>
     <main>
         <!-- HERO -->
-        <section class="h500px">
-            <div class="hero">
+        <section class="hero h500px ">
+            <div class=" container">
                 <h1>
                     Explorez la diversité musicale avec MusicHalle, votre boutique d'instruments du monde à Paris
                 </h1>
-                <a href="">Click ici !!!</a>
+                <a href="" class="bouton">Découvrez notre collection unique</a>
             </div>
         </section>
         <!-- Produits -->
-        <section id="produit">
-            <div id="secProduit" class="h100p flex gap16 justify-center"></div>
+        <section id="produit" class="container">
+            <div id="secProduit" class="h100p flex justify-between"></div>
         </section>
         <!-- Services -->
-        <section id="services">
+        <section id="services" class="swiper container">
             <!-- Div principale -->
-            <div id="secServices" class="flex justify-center gap5">
-                <!-- Div pour l'image -->
-                <div>
-                    <img src="" alt="">
-                </div>
-                <!-- Div pour les écritures -->
-                <div>
-                    <h2></h2>
-                    <p></p>
-                    <a href=""></a>
-                </div>
-            </div>
-        </section>
-        <!-- Notes et Commentaires -->
-        <section id="temoignage">
-            <div id="secTemoignage" class="flex justify-center gap16">
-                <!-- Div pour les notes -->
-                <div>
-                    <p></p>
-                </div>
-                <div>
-                    <h2></h2>
-                    <h3></h3>
-                    <p></p>
-                </div>
-            </div>
-        </section>
-        <!-- Promesses-->
-        <section id="promesses">
-            <div id="secPromesses" class="flex carte gap16 justify-center swiper">
-                <!-- Div pour les images -->
-                <div>
-                    <img src="" alt="">
-                </div>
-                <!-- Div pour les promesses -->
-                <div>
-                    <p></p>
-                </div>
-            </div>
-        </section>
-
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
+            <div id="secServices" class="swiper-wrapper margin10 ">
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -100,10 +51,15 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-        </div>
+        </section>
+        <!-- Temoignage -->
+        <section id="temoignage" >
+            <div id="secTemoignage" class="flex justify-center gap32">
+        </section>
+        <!-- Promesses-->
+        <section id="promesses" class="container">
+            <div id="secPromesses" class="flex gap16 ">
+        </section>
     </main>
 </body>
 
