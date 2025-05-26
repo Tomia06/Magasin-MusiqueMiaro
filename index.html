@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-FR">
 
 <head>
     <meta charset="UTF-8">
@@ -7,21 +7,30 @@
     <title>MusicHalle - Instruments du Monde</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-    
-        <header class=" flex  gap32">
+    <header>
+        <div class="flex">
             <div class="align-center">
-            <img src="assets/ogo-instrument-1.png" alt="" class="h50px">
+                <img src="assets/ogo-instrument-1.png" alt="" class="h50px">
             </div>
-            <a href=""><img src="assets/personna.png" alt=""></a>
-            <a href=""><img src="assets/shopBag.png" alt=""></a>
-        </header>
-        <main>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#promesses">Promesses</a></li>
+                    <li><a href="#produit">Produit</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#temoignage">Temoignages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
         <!-- HERO -->
-        <section class="h400px">
-            <div class="hero ">
+        <section class="h500px">
+            <div class="hero">
                 <h1>
                     Explorez la diversité musicale avec MusicHalle, votre boutique d'instruments du monde à Paris
                 </h1>
@@ -29,12 +38,13 @@
             </div>
         </section>
         <!-- Produits -->
-        <section id= "secProduit"class="flex  align-center gap16  ">
+        <section id="produit">
+            <div id="secProduit" class="h100p flex gap16 justify-center"></div>
         </section>
         <!-- Services -->
-        <section>
+        <section id="services">
             <!-- Div principale -->
-            <div>
+            <div id="secServices" class="flex justify-center gap5">
                 <!-- Div pour l'image -->
                 <div>
                     <img src="" alt="">
@@ -48,28 +58,52 @@
             </div>
         </section>
         <!-- Notes et Commentaires -->
-        <section>
-            <!-- Div pour les notes -->
-            <div>
-                <p></p>
-            </div>
-            <div>
-                <h2></h2>
-                <h3></h3>
-                <p></p>
+        <section id="temoignage">
+            <div id="secTemoignage" class="flex justify-center gap16">
+                <!-- Div pour les notes -->
+                <div>
+                    <p></p>
+                </div>
+                <div>
+                    <h2></h2>
+                    <h3></h3>
+                    <p></p>
+                </div>
             </div>
         </section>
         <!-- Promesses-->
-        <section>
-            <!-- Div pour les images -->
-            <div>
-                <img src="" alt="">
-            </div>
-            <!-- Div pour les promesses -->
-            <div>
-                <p></p>
+        <section id="promesses">
+            <div id="secPromesses" class="flex carte gap16 justify-center swiper">
+                <!-- Div pour les images -->
+                <div>
+                    <img src="" alt="">
+                </div>
+                <!-- Div pour les promesses -->
+                <div>
+                    <p></p>
+                </div>
             </div>
         </section>
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
     </main>
 </body>
 

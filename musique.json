@@ -46,17 +46,17 @@
     {
       "nom": "Ateliers Musicaux",
       "description": "Participez à nos ateliers musicaux pour explorer et apprendre à jouer des instruments du monde. Rencontrez des artistes locaux et partagez votre passion pour la musique.",
-      "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/instruments-musique-monde/ateliers-musicaux.webp"
+      "imageSevices": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/instruments-musique-monde/ateliers-musicaux.webp"
     },
     {
       "nom": "Réparations d'Instruments",
       "description": "Confiez-nous la réparation et l'entretien de vos instruments de musique du monde. Notre équipe qualifiée veillera à préserver la qualité sonore et l'authenticité de votre instrument.",
-      "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/instruments-musique-monde/reparations-instruments.webp"
+      "imageSevices": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/instruments-musique-monde/reparations-instruments.webp"
     },
     {
       "nom": "Conseils personnalisés",
       "description": "Nos experts sont là pour vous conseiller sur le choix d'instruments adaptés à votre style musical. Bénéficiez de conseils personnalisés pour enrichir votre expérience musicale.",
-      "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/instruments-musique-monde/conseils-personnalises.webp"
+      "imageSevices": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/instruments-musique-monde/conseils-personnalises.webp"
     }
   ],
   

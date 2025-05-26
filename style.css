@@ -7,8 +7,8 @@
 /* --------------------
 Hauteur 
 ----------------------- */
-.h400px{
-    height: 400px;
+.h500px{
+    height: 500px;
 }
 .h100px{
     height: 100px;
@@ -58,19 +58,24 @@ FLEX
 .justify-center{
     justify-content: center;
 }
-.gap32{
-    --gap: 32px;
-    gap: var(--gap);
-}
-.gap16{
-    --gap: 16px;
-    gap: var(--gap);
-}
+
 .align-start{
     align-items: flex-start;
 }
 
+/* -----------------
+GAP
+------------------- */
+.gap32{
+    gap: 32px;
+}
+.gap16{
+    gap: 16px;
+}
 
+.gap5{
+    gap: 5px;
+}
 
 
 
@@ -78,15 +83,45 @@ FLEX
 /* ---------------------------
         Le Header
 ------------------------------ */
-header{
-    backdrop-filter: blur(50px) ;
-    padding: 1px 0;
-    background-color: #8f5210ac;
-    position: sticky;
-    top: 0;
-    width: 100%;
-
+header {
+  background-color: #0a0a0a91;
+  padding: 10px 0;
+  color: rgb(245, 245, 245);
+  backdrop-filter: blur(30%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
+
+.nav-menu{
+  margin: auto;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+  
+.nav-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 20px;
+}
+  
+.nav-menu a:hover {
+  color: #ff9100;
+}
+header img{
+  width: auto;
+  height: auto;
+  padding: 5px;
+}
+
+
 
 /* ---------------
 HERO
@@ -111,12 +146,47 @@ HERO
 
 .card {
     padding: 16px;
-    box-shadow: 0 0 30px rgb(0, 0, 0);
-    font-size: 13px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.237);
+    font-size: 15px;
     margin-top: 64px;
     border-radius: 20px;
     
 }
+
 .brgRed{
     background-color: red;
+}
+
+.carte{
+    padding: 16px;
+    font-size: 20px;
+    margin-top: 64px;
+
+}
+.bgrBeige{
+    background-color: #ff9100;
+}
+
+.mon-bouton {
+  background-color: #c99c06; /* Couleur de fond verte */
+  color: white; /* Texte blanc */
+  padding: 15px 30px; /* Espacement intérieur (haut/bas, gauche/droite) */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins légèrement arrondis */
+  cursor: pointer; /* Curseur en forme de main au survol */
+  font-size: 16px; /* Taille de la police */
+  transition: background-color 0.3s ease; /* Transition douce pour le changement de couleur */
+}
+
+.mon-bouton:hover {
+  background-color: #45a049; /* Couleur de fond un peu plus foncée au survol */
+}
+
+.mon-bouton:active {
+  background-color: #367c39; /* Couleur de fond encore plus foncée au clic */
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
 }
